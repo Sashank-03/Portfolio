@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/e734ba0280.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script
 		src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -20,10 +22,10 @@
     <!-- <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
     <!-- <script src="index.js"></script> -->
-    <script>
+    <!-- <script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/b6vD11kOrFZ9YjwN/",
+				url:"https://script.google.com/macros/s/AKfycbxhqvAMSreajVsNllL2e1s-6W4GwNuOc8IQFYJuM8_YGGJayHr5mB34z6j7c-eFmFvR/exec",
 				type:"post",
 				data:$("#contact-form").serializeArray(),
 				success: function(){
@@ -34,7 +36,8 @@
 				}
 			});
 		}
-	</script>
+	</script> -->
+
     
 
 </head>
@@ -322,7 +325,7 @@
                                 <span class="progress">
                                     <span class="progress-value sk1">Python</span>
                                 </span> -->
-
+                                
                             </div>
                             <div class="row" style="margin-top: 20px;">
                                 <h4>Frameworks & Libraries: </h4><br>
@@ -446,7 +449,7 @@
                         <!-- <div class="col-8" style="background-color: rgb(83, 117, 147);"> -->
                             <div class="col-4" style="background-color: black" >
                                 <h2 class="heading" style="padding: 50px 0 20px 0; font-size: 30px;">Send a Message</h2>
-                                <form id="contact-form" class="form-horizontal" role="form" style="margin: auto;" action="#grp1">
+                                <form id="contact-form" class="form-horizontal" role="form" style="margin: auto;" action="">
                                     
                                     <div class="form-group" >
                                       <div class="col-sm-12">
@@ -462,7 +465,7 @@
                                     
                                     <textarea class="form-control" rows="6" placeholder="MESSAGE" name="message" required></textarea>
                                     
-                                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" onclick='SubForm()'>
+                                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
                                       <div class="alt-send-button" >
                                           <i class="fa fa-paper-plane" ></i><span class="send-text" >SEND</span>
                                         </div>
@@ -518,7 +521,7 @@
                                     <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_Xq11kFvNrf.json"  background="transparent"  speed="0.8"  style="width: 100px; height: 60px;"  loop autoplay ></lottie-player>
                                     
                                     <p style="padding-top: 22px; ">+91 7981232400</p>
-                                    </li>
+                                </li>
                                     <li style="display: flex; margin: 0; justify-content: center;" >
                                         <!-- <img src="files/email.png" alt="" height="70px" style="margin-left: 8px;"> -->
                                         <!-- <lord-icon
@@ -563,6 +566,26 @@
     </button>    
     <a id="gototop" href="#grp1"></a>
 
+
+    <script>
+        $("#contact-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwsGONgbFzUca98HdcZoJMbMQycTKfup4lEVJ9LOWaGe-sXsZ41G1ovsfZpIs6QJ6Lx/exec",
+                data:$("#contact-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
 </body>
 </html>
