@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href ="files/user.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/e734ba0280.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+
+    <!-- <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+    <!-- <script src="index.js"></script> -->
+    <script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/b6vD11kOrFZ9YjwN/",
+				type:"post",
+				data:$("#contact-form").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+    
+
+</head>
+<body>
+    
+    <div class="par_wrap" >
+        <!-- <div class="par_grp par_intro" id="intro">
+            INTRO
+        </div> -->
+        <div class="par_grp" id="grp1">
+            <div class="par_layer base_layer" >
+            </div>
+            <div class="par_layer mid_layer"> 
+            </div>
+            <div class="par_layer top_layer">
+
+
+                <div class="parallax-layer page1"  >
+            
+                    <nav class="d-flex flex-row justify-content-between">
+                        <div >
+                            <a href="#page2" class="px-5 navtxt">
+                                <h4 style="display: inline;">About</h4>
+                            </a>
+                            <a href="#page3" class="px-5 navtxt">
+                                <h4 style="display: inline;">Education</h4>
+                            </a>
+                            <a href="#page4" class="px-5 navtxt">
+                                <h4 style="display: inline;">Skills</h4>
+                            </a>
+                            <a href="#page5" class="px-5 navtxt">
+                                <h4 style="display: inline;">Projects</h4>
+                            </a>
+                        </div>
+                        <div id="container">
+                            <button class="download-cv" onclick="document.getElementById('link').click()">
+                                <i class='fa fa-download circle icon download ' style=" font-size: 25px;"></i>
+                                <span class="button-text">Download cv</span>
+                            </button>
+                            <a id="link" href="files/SaiSashankEnuganti.pdf" download></a>
+                        </div>
+                    </nav>
+                    <div class="container" >
+                        <div class="row">
+                            <div class="col-6" id="c1" >
+                                <h1 class="myname" style="font-size: 60px; margin-top: 10px;">Sai Sashank</h1>
+                                <h1 class="myname" style="font-size: 63px; margin-bottom: 0px;">Enuganti</h1>
+                                <br>
+                                <p class="maintxt"><strong style="font-size: 28px; padding-right: 7px;">Hey There!</strong><br> Thank you for taking time to visit. Fill your senses with my highlights. Feel free to drop a message, would love to hear back from you.</p>
+                                <div>
+                                    <a href="https://github.com/Sashank-03" target="_blank" rel="noopener noreferrer" style="margin: 0 15px; color: transparent;">
+                                        <img src="files/github-logo.png" alt="" height="36px">
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/sai-sashank-enuganti-a73358153/" target="_blank" rel="noopener noreferrer">
+                                        <img src="files/linkedin.png" alt="" height="36px">
+                                    </a>
+                                </div>
+                            
+                            </div>
+                            <div class="col-6 h-sas">
+                                <img src="files/fin.png" alt="" height="600px" style="position: relative; bottom:120px; right: 0px;">
+                            </div>
+
+                        </div>
+                        
+
+
+
+                        <div class="d-flex flex-row justify-content-between" style="margin: 50px 0 0 0;">
+                            <div>
+                                <img src="files/phone.png" alt="" height="23px">
+                                <a href="tel: +91 7981232400" style="color: rgb(31, 31, 31); text-decoration: none; font-size: 17px;">+91 7981232400</a>
+                            </div>
+                            <div>
+                                <img src="files/mail.png" alt="" height="23px">
+                                <a href="mailto: saisashankenuganti@gmail.com" style="color: rgb(31, 31, 31); text-decoration: none; font-size: 17px;">saisashankenuganti@gmail.com</a>
+                            </div>
+                            <div>
+                                <img src="files/date-of-birth.png" alt="" height="19px">
+                                <span style="font-size: 17px;">03-05-2002</span>
+                            </div>
+    
+                        </div>
+                        <div>
+    
+                        </div>
+                    
+                    </div>
+                </div>
+            
+                <div  class="parallax-layer page2 container" id="page2" >
+                    <div class="row col-12 aboutme App" >
+                        <h1 class="heading" style="font-size: 55px; padding-top: 70px;">
+                            About Me
+                        </h1>
+                        <div class="vl">
+                            <p>
+                                I'm a self-motivated and team-oriented IT under graduate seeking for opportunities that help me achieve my goals. Having a zeal to learn new things, I look forward in adapting to new environments, meeting new friends and contributing the most.
+                                Loving the process as much as the outcome, I take a collaborative, creative and strategic approach to solving problems.
+                            </p>
+                            <p>
+                                These days my time is spent acquiring and developing new skills, exploring new technologies and coding. <br>
+                                Apart from that you’ll find me capturing moments, trying out new strategies in games and exploring new genres in movies and series. 
+                            </p>
+            
+                            <button class="contactme" onclick="document.getElementById('cont').click()">
+                                <span style="font-weight: 600;">Contact Me</span> 
+                            </button>
+                            <a id="cont" href="#page6"></a>
+                        </div>
+
+                        <div class="row" style="margin-top: 70px;" >
+                            <div class="col-9" style="padding-left: 80px;">
+                                <i class="fa fa-quote-left" style="font-size: 50px;"></i><span style="padding-left: 15px; font-size: 23px;">Photography is just calibrating light and time according to the environment and being a photographer means growing with every gained perspective and all the challenges that come with it – an endless adventure.</span>
+                            </div>
+                            <div class="col-3" >
+                                <img src="files/fin2.png" alt="" height="350px" style="position: relative; bottom:130px; right: 10px;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="parallax-layer page3 container" id="page3" style="padding-top: 60px;">
+                    <div class="education">
+                        <div>
+                            <h1 class="heading" style="font-size: 55px; margin-top: 35px;">
+                                Education
+                            </h1>
+                        </div>
+                        <div class="row" style="margin-top: 50px;" >
+                            <div class="col-2 edu1" style="padding-left: 60px;">
+                                <p>2020-Present</p>
+                            </div>
+                            <div class="col-5 edu1 evl" style="padding-bottom: 30px ;padding-left: 35px;">
+                                <div style="margin: 0;">Keshav Memorial Institute of Technology</div>
+                                <div style="margin: 0;">Bachelor of Technology in Infomation Technology</div>
+                                <div style="margin: 0;">CGPA: 9.4</div>                                                                                                              
+                                <div style="margin: 0;">Highest GPA: 9.7</div>                                                                                                              
+                            </div>
+                            <div class="col-5" style="margin: 0;">
+                                <h2 style="padding:0; margin-bottom: 15px; font-size: 40px;">Certificates & Achievements</h2>
+                                
+                            </div>
+                            <div class="col-2 edu1" style="margin-top: 5px; padding-left: 60px;">
+                                <p>2019-2020</p>
+                            </div>
+                            <div class="col-5 edu1 evl" style="padding-bottom: 0px;padding-left: 35px; ">
+                                <div style="margin: 0;">Nano Junior College</div>
+                                <div style="margin: 0;">Higher Secondary Education II Year</div>
+                                <div style="margin: 0;">Score: 91.2%</div>                                                                                                              
+                            </div>
+                            <div class="col-5">
+                                <ul>
+                                    <li style="justify-content: center;">NPTEL course Certification in Introduction to Machine Learning from IITKGP. <a href="https://firebasestorage.googleapis.com/v0/b/student-form-1835e.appspot.com/o/Introduction%20to%20Machine%20Learning.jpg?alt=media&token=e7883200-6429-4c4d-b4cb-d4c248b15418" target="_blank" rel="noopener noreferrer"><img src="files/external-link-symbol-2.png" alt="" height="15px"></a></li>
+                                    <li style="margin-top: 7px;">Rewarded in a college coding competition NFS (Nirantar Finishing School).</li>
+                                </ul>
+                            </div>
+                            <div class="col-2 edu1" style="margin-top: 5px;padding-left: 60px;"> 
+                                <p>2018-2019</p>
+                            </div>
+                            <div class="col-5 edu1 evl"  style="padding-bottom: 30px;padding-left: 35px;">
+                                <div style="margin: 0;">Velociity Junior College</div>
+                                <div style="margin: 0;">Higher Secondary Education I Year</div>
+                                <div style="margin: 0;">Score: 98%</div>                                                                                                              
+                            </div>
+                            <div class="col-5">
+                                <ul>
+                                    <!-- <li>NPTEL course Certification in Introduction to Machine Learning from IITKGP.</li> -->
+                                    <!-- <li>Rewarded in a college coding competition NFS (Nirantar Finishing School).</li> -->
+                                </ul>
+                                
+                            </div>
+                            <div class="col-2 edu1" style="margin-top: 5px;padding-left: 60px;"> 
+                                <p>2017-2018</p>
+                            </div>
+                            <div class="col-5 edu1 evl"  style="padding-bottom: 30px;padding-left: 35px;">
+                                <div style="margin: 0;">Narayana High School</div>
+                                <div style="margin: 0;">Secondary Education</div>
+                                <div style="margin: 0;"> GPA: 9.7</div>                                                                                                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="parallax-layer page4 flex-column" id="page4" style="padding: 0; margin: 0;">
+                    <div class="skills" >
+                        <div style="margin: 30px 200px 10px 217px; padding-top: 50px;">
+                            <h1 class="heading" style="font-size: 55px; ">
+                                Skills
+                            </h1>
+                        </div>
+                        <p style="margin: 20px 150px 20px 150px; font-size: 18px;"> Thriving to learn something new is what I think that makes me stand out and I consider it as my daily routine rather than a skill.</p>
+                        
+                        <div class="col" style="margin: 30px 100px 30px 150px;">
+                            <div class="row">
+                                <h4>Programming Languages: </h4><br>
+                            </div>
+
+                            <div class="row">
+                                <span class="progress">
+                                    <span class="progress-value sk1 java">Java</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 python">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 C">C</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 cpp">C++</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 JS">Javascript</span>
+                                </span>
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span> -->
+                                
+                            </div>
+                            <div class="row" style="margin-top: 20px;">
+                                <h4>Web Development: </h4><br>
+                            </div>
+
+                            <div class="row">
+                                <span class="progress">
+                                    <span class="progress-value sk1 html">HTML</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 css">CSS</span>
+                                </span>
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1 C">C</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 cpp">C++</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 JS">Javascript</span>
+                                </span> -->
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span> -->
+
+                            </div>
+                            <div class="row" style="margin-top: 20px;">
+                                <h4>Software Development: </h4><br>
+                            </div>
+
+                            <div class="row">
+                                <span class="progress">
+                                    <span class="progress-value sk1 git">Git</span>
+                                </span>
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1 python"></span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 C">C</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 cpp">C++</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 JS">Javascript</span>
+                                </span> -->
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span> -->
+
+                            </div>
+                            <div class="row" style="margin-top: 20px;">
+                                <h4>Frameworks & Libraries: </h4><br>
+                            </div>
+
+                            <div class="row">
+                                <span class="progress">
+                                    <span class="progress-value sk1 bootstrap">Bootstrap</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 numpy">Numpy</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 matplotlib">Matplotlib</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 pandas">Pandas</span>
+                                </span>
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1 JS">Javascript</span>
+                                </span> -->
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span> -->
+
+                            </div>
+                            <div class="row" style="margin-top: 20px;">
+                                <h4>Databases: </h4><br>
+                            </div>
+
+                            <div class="row">
+                                <span class="progress">
+                                    <span class="progress-value sk1 sql">MySQL</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 mongo">MongoDB</span>
+                                </span>
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1 hin">Hindi</span>
+                                </span> -->
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1 cpp">C++</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1 JS">Javascript</span>
+                                </span> -->
+                                <!-- <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span>
+                                <span class="progress">
+                                    <span class="progress-value sk1">Python</span>
+                                </span> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="par_grp" id="grp2" style="position: relative; top: 1313px;">
+            <div class="par_layer mid_layer" style="height: 130vh;">
+            
+            </div>
+            <div class="par_layer top_layer">
+                <div  class="parallax-layer page5 wrapper" id="page5" >
+                    <div class="satbg" >
+                
+                        <!-- <img src="bg3.jpg" alt="" > -->
+                    </div>
+                    <div class="col-12" style="padding: 50px 120px;">
+                        <h1 class="evl2" style="color: whitesmoke; padding: 30px 30px; font-weight: 600 ;">Earth Observatory Data Cube for Nizamabad district</h1>
+                        
+                    </div>
+                    <div class="col-6" style="margin-left: 180px;">
+                        <p style="color: whitesmoke; font-size: 23px;">
+                            Using the satellite images of Nizamabad district that are procured from Sentinel 2 and Landsat sensors, perform time series analysis and produce analysis-ready data (ARD) from satellite imagery and organize the data as multidimensional data cubes. The ARD results from processing satellite imagery from data acquisition to radiometric calibration, and through additional conversions, to top-of-atmosphere (TOA) reflectance, and finally surface reflectance. The Data Cube provides data through web services that could be used by different applications for the identification and assessment of deforestation in an area of interest such as Nizamabad.
+                
+                        </p>
+                    </div>
+                    
+                    <div class="col-12" style="margin-left: 120px; margin-top: 60px;">
+                        <p style="color: whitesmoke; font-size: 23px;">
+                            <b style="color: whitesmoke; font-size: 25px;">Technologies: </b>
+                             Python, Deep Learning, MERN
+                             
+                            </p>
+                        </div>    
+                    </div>
+            </div>
+            <div class="par_layer top_layer_2">
+                <!-- <img src="files/sat2" alt=""> -->
+            </div>
+        </div>
+        
+        <div class="par_grp_2" id="grp3" >
+            <div id="page6" style=" position: relative; top: 200px;"></div>
+            <div class="par_layer mid_layer" style="height: 130vh; position: relative; top: 200px;" >
+                <div class="page6"  style="display: block; margin: auto;" >
+                    <div class="row" >
+                        <div class="col-12" >
+                            <h1 class="heading" style="text-align: center; margin-top: 70px; margin-bottom: 30px; font-size: 55px;" >Get In Touch!!</h1>
+                        </div>
+                        
+                    </div>
+                    <div class="row" >
+                        <div class="col-8" style="margin: auto;">
+                            <!-- <p>Awaiting career opportunities.</p> -->
+                            <p>Awaiting career opportunities. Here are a few different options for getting in touch with me. I would welcome any valuable suggestions posted.</p>
+                        </div>
+                    </div>  
+                    <div class="row h-20" style="display: flex; justify-content: center; text-align: center;" >
+                        <!-- <div class="col-8" style="background-color: rgb(83, 117, 147);"> -->
+                            <div class="col-4" style="background-color: black" >
+                                <h2 class="heading" style="padding: 50px 0 20px 0; font-size: 30px;">Send a Message</h2>
+                                <form id="contact-form" class="form-horizontal" role="form" style="margin: auto;" action="#grp1">
+                                    
+                                    <div class="form-group" >
+                                      <div class="col-sm-12">
+                                          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <textarea class="form-control" rows="6" placeholder="MESSAGE" name="message" required></textarea>
+                                    
+                                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND" onclick='SubForm()'>
+                                      <div class="alt-send-button" >
+                                          <i class="fa fa-paper-plane" ></i><span class="send-text" >SEND</span>
+                                        </div>
+                                        
+                                    </button>
+                                    
+                                  </form>
+                                  
+                                  <ul class="ul-sm">
+                                    <li><a href="https://www.twitter.com/enugantisai" rel="noopener noreferrer" target="_blank"  >
+                                        <i class="fab fa-twitter" tabindex="0" ></i>
+                                    </a></li>
+                                    <li><a href="https://www.instagram.com/_sashank_3502/" rel="noopener noreferrer" target="_blank" >
+                                        <i class="fab fa-instagram" tabindex="0"></i>
+                                    </a></li>
+                                    <li><a href="https://www.snapchat.com/add/sashank_3502" rel="noopener noreferrer" target="_blank" >
+                                        <i class="fab fa-snapchat" tabindex="0" ></i>
+                                    </a></li>
+                                    <li><a href="https://www.linkedin.com/in/sai-sashank-enuganti-a73358153/" rel="noopener noreferrer" target="_blank">
+                                        <i class="fab fa-linkedin" tabindex="0"></i>
+                                    </a></li>
+                                    <li><a href="https://github.com/Sashank-03" rel="noopener noreferrer" target="_blank">
+                                        <i class="fab fa-github" tabindex="0"></i>
+                                    </a></li>
+                                    <li><a href="https://t.me/sashank_3502" rel="noopener noreferrer" target="_blank"  >
+                                        <i class="fab fa-telegram" tabindex="0" target="_blank" ></i>
+                                    </a></li>
+                                </ul>
+                                
+                            </div>
+                            <div class="col-4" style="background-color:white; color: black; font-weight: 500;"  >
+                                <ul class="ul-details" style="margin-top: 0px;">
+                                    <li style="display: flex; margin: 0; justify-content: center;" >
+                                        <!-- <img src="files/google-maps.png" alt="" height="70px"> -->
+                                        <lord-icon
+                                        src="https://cdn.lordicon.com/oaflahpk.json"
+                                        trigger="loop"
+                                        delay="1000"
+                                        colors="primary:#4bb3fd"
+                                        state="hover-jump"
+                                        style="width:170px; height:100px; margin: 0; " >
+                                    </lord-icon>
+                                    <p style="margin-top: 23px;">H.No: 3-5-549/3, Swaraj Nivas, Vittalwadi, Narayanguda, Hyderabad, Telangana State - 500029</p>
+                                </li>
+                                <li style="display: flex; margin: 0; justify-content: center;" >
+                                    <!-- <img src="files/phone-call.png" alt="" height="60px" style="margin-left: 100px;"> -->
+                                    <!-- <lord-icon
+                                        src="https://cdn.lordicon.com/avkeowsl.json"
+                                        trigger="loop"
+                                        delay="1000"
+                                        style="width:120px;height:80px; margin-left: 60px; margin-top: 0; margin-bottom: 0;">
+                                    </lord-icon> -->
+                                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_Xq11kFvNrf.json"  background="transparent"  speed="0.8"  style="width: 100px; height: 60px;"  loop autoplay ></lottie-player>
+                                    
+                                    <p style="padding-top: 22px; ">+91 7981232400</p>
+                                    </li>
+                                    <li style="display: flex; margin: 0; justify-content: center;" >
+                                        <!-- <img src="files/email.png" alt="" height="70px" style="margin-left: 8px;"> -->
+                                        <!-- <lord-icon
+                                            src="https://cdn.lordicon.com/iepbfivp.json"
+                                            trigger="loop"
+                                            delay="1000"
+                                            colors="primary:#121331,secondary:#4bb3fd,tertiary:#ebe6ef"
+                                            style="width:160px;height:100px">
+                                        </lord-icon> -->
+                                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_gfgnjnyb.json"  background="transparent"  speed="1.25"  style="width: 120px; height: 80px;"  loop autoplay></lottie-player>
+                                        <p style="margin-top: 37px; ">saisashankenuganti@gmail.com</p>
+                                    </li>
+                                </ul>
+                                
+                                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d951.8215736959592!2d78.48719982920561!3d17.398042999254525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef029c22defd11fe!2zMTfCsDIzJzUzLjAiTiA3OMKwMjknMTUuOSJF!5e0!3m2!1sen!2sin!4v1673976731954!5m2!1sen!2sin"   style="border:0; margin-top: 28px; display: flex; width: 100%; height: 255px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                    <p style="text-align: center; margin-top: 125px;"  >Developed by <strong>Enuganti Sai Sashank</strong></p>
+    
+                </div>
+                
+            </div>
+            
+            <!-- <div class="row top_layer_2" style="background-color: black; color: aliceblue; margin: auto; justify-content: center;" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error unde ab ipsa facilis quo, labore, molestiae nisi sed hic, nostrum minima doloribus. Eaque minus omnis rerum! Tempore iste molestiae commodi.</p>
+            </div> -->
+            
+        </div>
+        
+        <!-- <div class="par_outro" id="outro" >
+            OUT
+        </div> -->
+    </div>
+    <!-- <img src="files/sat.png" alt=""> -->
+    <button
+        class="btn btn-primary btn-floating btn-lg"
+        id="btn-back-to-top"
+        onclick="document.getElementById('gototop').click()"
+        >
+    <i class="fas fa-arrow-up"></i>
+    </button>    
+    <a id="gototop" href="#grp1"></a>
+
+
+</body>
+</html>
