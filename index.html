@@ -40,12 +40,31 @@
 		}
 	</script> -->
 
+    <style media="all">
+        .mobile-content{display:none}
+        .desktop-content{display:block}
+        @media (max-width:1200px){
+        .desktop-content {display:none}
+        .mobile-content {display:block}
+        #btn-back-to-top{display: none}
+        }
+        @media (max-height:700px){
+        .desktop-content {display:none}
+        .mobile-content {display:block}
+        #btn-back-to-top{display: none}
+        }
+    </style>
+
     
 
 </head>
 <body>
+
+    <div class="mobile-content" style="text-align: center; position: relative; transform: translateY(50%); -ms-transform: translateY(50%);">
+        <p>Thank you so much for visiting this site. <br> But currently, this website is only available for Desktops and PCs. <br> Sorry for the inconvenience caused.</p>
+    </div>
     
-    <div class="par_wrap" >
+    <div class="par_wrap desktop-content" >
         <!-- <div class="par_grp par_intro" id="intro">
             INTRO
         </div> -->
